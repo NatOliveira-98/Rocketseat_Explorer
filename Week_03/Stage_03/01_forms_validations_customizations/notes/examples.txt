@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer - Stage 3 - Formulários</title>
+  </head>
+
+  <body>
+    <form action="whereToSend" method="HTTPmethods_GET_POST">
+    
+    </form>
+
+    <label for="title">Event Title</label>
+    <input type="text" name="title" id="title">
+
+    <input type="password" name="" id="">
+    <input type="number" name="" id="">
+    <input type="checkbox" name="" id="">
+
+    <select name="" id="">
+      <option value="music">Music</option>
+      <option value="movie">Movie</option>
+    </select>
+
+    <textarea name="" id=""></textarea>
+  </body>
+</html>
+
+====
+
+=> GET;
+  - envia recursos pela URL;
+
+=> POST;
+  - envia recursos pelo corpo da requisição;
+
+- Query String Parameters;
+  - url paramenters;
+

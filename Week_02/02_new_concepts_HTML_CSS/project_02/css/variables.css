@@ -1,0 +1,33 @@
+:root {
+  --debbug: 1px solid red;
+
+  /* COLORS */
+  --white: #fff;
+  --black: #000;
+  --bluish-green: #89C5CC;
+  --dark-blue-links: #1F1534;
+  --light-bluish-green: #69B99D;
+  --gray: #7D7987;
+  --light-gray: #F9F9F9;
+
+  /* MEASURES */
+  --margin-top-header: 65px;
+  --margin-bottom-header: 58px;
+  --margin-bottom-headings: 40px;
+  --margin-bottom-main: 82px;
+
+  --padding-btn: 14px 32px 15px;
+
+  /* FONTS */
+  --font-size: 14px;
+
+  --font-logo: 700 22px/26px 'Inter', sans-serif;
+  --font-page-links: 400 18px/23px 'Mulish', sans-serif;
+  --font-headings: 400 49px/56px 'Mulish', sans-serif;
+  --font-paragraphs: 400 14px/28px 'Open Sans', sans-serif;
+  --font-btn: 500 16px/20px 'DM Sans', sans-serif;
+  --font-footer: 400 14px/14px 'Open Sans', sans-serif;
+
+  /* TRANSITIONS */
+  --transition-main: all 0.3s ease;
+}

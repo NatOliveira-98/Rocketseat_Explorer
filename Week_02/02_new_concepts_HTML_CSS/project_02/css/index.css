@@ -1,0 +1,136 @@
+/* 
+====
+  IMPORTS_GRP
+====
+ */
+
+@import './reset.css';
+@import './variables.css';
+
+ /* 
+====
+  LAYOUT_GRP
+====
+ */
+
+/* BASE_GRP */
+#page-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#circles {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+body {
+  background: var(--white);
+  font-size: var(--font-size);
+  text-align: center;
+}
+
+/* HEADER_GRP */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--margin-top-header) auto var(--margin-bottom-header);
+}
+
+#logo {
+  font: var(--font-logo);
+  color: var(--bluish-green);
+}
+
+#navbar-list {
+  display: flex;
+  gap: 48px;
+}
+
+.pages-links {
+  color: var(--dark-blue-links);
+  font: var(--font-page-links);
+  transition: var(--transition-main);
+  opacity: 0.5;
+}
+
+.pages-links:hover {
+  color: var(--bluish-green);
+  opacity: 1;
+}
+
+.pages-links.active {
+  color: var(--dark-blue-links);
+  font-weight: 700;
+  opacity: 1;
+}
+
+/* MAIN_GRP */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-bottom: var(--margin-bottom-main);
+}
+
+#main-page-text {
+  max-width: 500px;
+}
+
+.page-heading {
+  font: var(--font-headings);
+  margin-bottom: var(--margin-bottom-headings);
+}
+
+.page-heading > span {
+  font-weight: 700;
+  color: var(--bluish-green);
+}
+
+.page-paragraphs {
+  max-width: 440px;
+  color: var(--gray);
+  font: var(--font-paragraphs);
+  margin-bottom: var(--margin-bottom-headings);
+}
+
+.page-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background: var(--light-bluish-green);
+  padding: var(--padding-btn);
+  border-radius: 5px;
+  
+  color: var(--light-gray);
+  font: var(--font-btn);
+  line-height: 20px;
+
+  cursor: pointer;
+  transition: var(--transition-main);
+}
+
+.page-btn:hover {
+  background: var(--bluish-green);
+}
+
+/* FOOTER_GRP */
+footer, footer a {
+  font: var(--font-footer);
+  color: var(--black);
+}
+
+footer a {
+  font-weight: 700;
+  transition: var(--transition-main);
+}
+
+footer a:hover {
+  color: var(--bluish-green);
+}

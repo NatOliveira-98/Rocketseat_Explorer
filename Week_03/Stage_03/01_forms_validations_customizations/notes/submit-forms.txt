@@ -1,0 +1,5 @@
+  - button inside a form is a submit;
+    - need to chage its type;
+
+  - if using an input for a button need to change the type as well;
+    - for button, in this case;
