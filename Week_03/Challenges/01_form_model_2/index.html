@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- PAGE_INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorer - Formulário Mentoria Feedback</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- HEADER -->
+      <header>
+        <h1>Avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img
+          src="./assets/images/img1.png"
+          alt="Imagem do nível com estrelas para representar o nível de satisfação com a mentoria"
+        />
+      </header>
+
+      <!-- FORM -->
+      <form id="mentorship-form">
+        <div class="background-legend"></div>
+        <!-- INFO -->
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend class="custom-form-title">Informações Pessoais</legend>
+
+            <div class="input-wrapper name-wrapper">
+              <div>
+                <label for="info-name-first">Nome</label>
+                <input type="text" id="info-name-first" required />
+              </div>
+
+              <div>
+                <label for="info-name-last">Sobrenome</label>
+                <input type="text" id="info-name-last" required />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="info-email">
+                Email <span>(digite um email válido)</span>
+              </label>
+              <input type="email" id="info-email" required />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- MENTOR -->
+        <fieldset class="mentor-info">
+          <div class="fieldset-wrapper">
+            <legend>Informações do Mentor</legend>
+
+            <div class="input-wrapper">
+              <label for="mentor-name">Selecione quem foi o seu mentor</label>
+              <select id="mentor-name" required>
+                <option value="dean">Dean</option>
+                <option value="sam">Sam</option>
+                <option value="cass">Cass</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mentor-feedback">Feedback sobre o mentor</label>
+              <textarea id="mentor-feedback"></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="mentor-questions" />
+              <label for="mentor-questions">
+                Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- SCHEDULE -->
+        <fieldset class="mentorship">
+          <div class="fieldset-wrapper">
+            <legend>Agendando próxima mentoria</legend>
+          </div>
+
+          <div>
+            <div class="mentorship-wrapper">
+              <div class="input-wrapper">
+                <label for="mentorship-first">
+                  Data <span>(DD/MM/AAAA)</span>
+                </label>
+                <input type="date" id="mentorship-first" required />
+              </div>
+
+              <div class="mentorship-time">
+                <div class="input-wrapper">
+                  <label for="mentorship-first-starts">Das</label>
+                  <input type="time" id="mentorship-first-starts" required />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="mentorship-first-ends">Até</label>
+                  <input type="time" id="mentorship-first-ends" required />
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- FORM_SUBMIT -->
+        <button type="submit" form="mentorship-form" class="btn-submit">
+          Salvar
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

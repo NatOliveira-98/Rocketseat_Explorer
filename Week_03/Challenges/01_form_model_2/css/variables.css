@@ -1,0 +1,16 @@
+:root {
+  /* COLORS */
+
+  --color-primary: #293241;
+  --color-secondary: #F67669;
+  --color-tertiary: #BFD7E4;
+  --color-white: #FFF;
+
+  --form-header-text-color: #535971;
+  --form-text-color: #4E4958;
+  --input-background-color: #FAFAFC;
+
+  /* FONTS */
+  --poppins: 'Poppins', sans-serif;
+  --staatliches: 'Staatliches', cursive;
+}

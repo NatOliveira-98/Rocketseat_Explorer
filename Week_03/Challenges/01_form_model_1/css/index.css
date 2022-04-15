@@ -1,0 +1,206 @@
+/* 
+====
+  IMPORTS_GRP
+====
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap');
+
+@import './reset.css';
+@import './variables.css';
+
+/* 
+====
+  LAYOUT_GRP
+====
+*/
+body {
+  background: var(--color-tertiary);
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+body::before {
+  content: '';
+
+  background: var(--color-primary);
+  width: 100%;
+  height: 43.6rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.page-wrapper {
+  width: 75rem;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  width: 41.7rem;
+  margin: 14rem 0 5.8rem;
+}
+
+header h1 {
+  color: var(--color-white);
+  font: 400 4.8rem/6rem var(--staatliches);
+}
+
+header p {
+  color: var(--color-white);
+  font: 400 2rem/3rem var(--poppins);
+}
+
+/* FORM */
+form {
+  background: var(--color-white);
+  border-radius: 2rem 2rem 0 0;
+  padding: 6.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* _FORM_FIELDS */
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.fieldset-wrapper legend {
+  color: var(--form-header-text-color);
+  font: 400 2.4rem/3.4rem var(--staatliches);
+  text-transform: uppercase;
+
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #E6E6F0;
+
+  margin-bottom: 2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  color: var(--form-text-color);
+  font: 400 1.4rem/2.4rem var(--poppins);
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 9px;
+
+  color: #C1BCCC;
+  font: 400 1.2rem/2rem var(--poppins);
+
+  transition: all 0.3s ease;
+}
+
+.input-wrapper label span:hover {
+  color: var(--form-text-color);
+  opacity: 0.7;
+}
+
+.input-wrapper input {
+  color: var(--form-text-color);
+  font: 400 1.4rem/2.4rem var(--poppins);
+  padding: 1rem;
+
+  background: var(--input-background-color);
+  width: 100%;
+  height: 5.6rem;
+  
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+}
+
+.input-wrapper input:focus, .form-btn button:focus {
+  border: 2px solid black;
+}
+
+.input-wrapper.name-wrapper {
+  display: flex; 
+  flex-direction: row;
+  gap: 2.2rem;
+}
+
+.input-wrapper.name-wrapper div {
+  flex: 1;
+}
+
+.input-wrapper.name-wrapper input {
+  margin-top: 8px;
+}
+
+/* _FORM_MENTORSHIP_DATES */
+.mentorship {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.mentorship h2 {
+  color: var(--form-header-text-color);
+  font: 400 2rem/3.4rem var(--staatliches);
+  text-transform: uppercase;
+}
+
+.mentorship-wrapper {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.mentorship-wrapper .input-wrapper {
+  flex: 2;
+}
+
+.mentorship-wrapper .mentorship-time {
+  flex: 1;
+
+  display: flex;
+  gap: 1rem;
+}
+
+/* _FORM_INVALID */
+/* works better together with js */
+/* input:invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  border: 1px solid #E6E6F0;
+} */
+
+/* _FORM_SUBMIT */
+.form-btn {
+  height: 16rem;
+  background: var(--color-primary);
+  border-radius: 0 0 2rem 2rem;
+
+  padding: 5.2rem 7.1rem;
+  margin-bottom: 10rem;
+}
+
+.form-btn button {
+  width: 100%;
+  height: 5.5rem;
+  background-color: var(--color-secondary);
+  border-radius: 2rem;
+
+  color: var(--color-white);
+  font: 400 2rem/2.6rem var(--staatliches);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-btn button:hover {
+  background: #d64461;
+}

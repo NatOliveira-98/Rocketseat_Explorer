@@ -1,0 +1,177 @@
+/* 
+====
+  IMPORTS_GRP
+====
+*/
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap');
+
+@import './reset.css';
+@import './variables.css';
+
+/* 
+====
+  LAYOUT_GRP
+====
+*/
+body {
+  background: var(--background-color-primary);
+
+  color: var(--text-color-primary);
+  font-size: 1.6rem;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.page-container {
+  max-width: clamp(33rem, 30rem + 60vw, 117rem);
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+header {
+  text-align: center;
+  line-height: 3.2rem;
+  margin: 10rem 0 8rem;
+}
+
+header p {
+  color: var(--text-color-secondary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin: 1.7rem;
+}
+
+header h1 {
+  font-size: var(--font-size-heading);
+  line-height: 4.8rem;
+  font-weight: 800;
+}
+
+main {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.card {
+  position: relative;
+  
+}
+
+.card img {
+  height: 41.6rem;
+  /* img tag now is a box, and its src is a child */
+  /* so object-fit is working on the src */
+  object-fit: cover;
+  border-radius: 6px;
+
+  filter: opacity(0.8);
+
+  transition: all 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 5.2rem;
+  left: 2.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  
+  font-size: var(--font-size-heading-small);
+  font-weight: 800;
+}
+
+.card h2 span {
+  display: inline-flex;
+  align-items: center;
+  
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 0 1.6rem;
+  width: fit-content;
+  height: 3.8rem;
+
+  color: var(--text-color-tertiary);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* 
+====
+  MEDIA_QUERIES
+====
+*/
+@media (min-width: 700px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+}
+}
+
+@media (min-width: 930px) {
+  main {
+    grid-template-columns: none;
+    grid-template-areas: "A B B B B B"
+    "C C C C C D";
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+
+  main div:nth-child(4) {
+    grid-area: D;
+  }
+}
+
+
+/* 
+====
+  ANIMATIONS_GRP
+====
+*/
+header {
+  animation: topdown 0.7s;
+}
+
+main {
+  animation: downtop  0.7s 0.2s backwards;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

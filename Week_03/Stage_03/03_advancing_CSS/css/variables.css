@@ -1,0 +1,18 @@
+:root {
+  /* COLORS */
+  --hue: 250;
+
+  --background-color-primary: hsl(var(--hue), 22%, 20%);
+
+  --text-color-primary: hsl(var(--hue), 0%, 100%);
+  --text-color-secondary: hsl(var(--hue), 50%, 80%);
+  --text-color-tertiary: hsl(var(--hue), 100%, 11%);
+
+  
+  /* FONTS */
+  --font-family: 'Epilogue', sans-serif;
+
+  /* clamp(min, ideal, max) */
+  --font-size-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
+  --font-size-heading-small: clamp(3rem, 0.5rem + 3vw, 4rem); 
+}
