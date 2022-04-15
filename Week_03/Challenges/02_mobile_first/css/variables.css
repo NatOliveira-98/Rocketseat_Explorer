@@ -1,0 +1,16 @@
+:root {
+  /* COLORS */
+  --color-darkgray: #4A4E69;
+  --color-gray: #8E9AAF;
+  --color-grayish-pink: #CBC0D3;
+  --color-light-pink: #FEEAFA;
+  --color-grayish: #EFF1FF;
+
+  --color-font-body: #23053A;
+  --color-font-heading1: #FFF;
+  --color-font-heading2: #4A4E69;
+
+  /* FONTS */
+  --font-palanquin: 'Palanquin', sans-serif;
+  --font-staatliches: 'Staatliches', cursive;
+}
