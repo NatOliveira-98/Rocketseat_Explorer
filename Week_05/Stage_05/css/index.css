@@ -1,0 +1,66 @@
+/*
+====
+  IMPORTS
+====
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@import './reset.css';
+
+/*
+====
+  LAYOUT
+====
+*/
+body {
+  display: grid;
+  background: #121214;
+  
+  min-height: 100vh;
+}
+
+.container {
+  align-self: end;
+  justify-self: center;
+}
+
+#time {
+  display: flex;
+  align-items: center;
+}
+
+#time span {
+  color: #FFF;
+  font: 700 8.8rem/10.3rem 'Roboto', sans-serif;
+  margin-bottom: 1.6rem;
+}
+
+#controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+
+  background: rgba(66, 211, 255, 0.13);
+  width: 22.8rem;
+  height: 10.8rem;
+  border-radius: 10rem;
+}
+
+.btn-hidden {
+  display: none;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+#sound {
+  align-self: end;
+  justify-self: end;
+  padding: 3rem;
+}
