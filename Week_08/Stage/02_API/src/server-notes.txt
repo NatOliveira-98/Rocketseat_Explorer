@@ -1,0 +1,45 @@
+const express = require('express');
+
+const app = express();
+app.use(express.json());
+
+// ROUTE PARAMS
+// /route => can be a route or resource
+// /route/:parameter
+app.get('/message/:id/:user', (request, response) => {
+  // são utilizados para dados simples
+  // e.g. an product's id => /product/:id
+  const { id, user } = request.params;
+
+  // /user => route param
+  // é obrigatório
+  // fazem parte da rota
+
+  response.send(`
+  Message ID: ${id}.
+  For the user: ${user}.
+  `);
+});
+
+// QUERY PARAMS
+// não é obrigatório na URL
+// consegue acessar a rota
+app.get('/users', (request, response) => {
+  // https://server.com/user?page=2&limit=10
+  // ? => first query param
+  // & => two or more query params
+  const { page, limit } = request.query;
+
+  response.send(`Page: ${page}. Show: ${limit}`);
+});
+
+// post envia informações no body da request
+app.post('/users', (request, response) => {
+  const { name, email, password } = request.body;
+
+  // .json() é o mais utilizado para response de API's
+  response.json({ name, email, password });
+});
+
+const PORT = 3000;
+app.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));

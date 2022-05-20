@@ -1,0 +1,5 @@
+NPM é uma ferramenta que usa para instalar pacotes,
+e executar scripts de pacotes instalados;
+
+NPX é uma ferramenta que usa para executar pacotes,
+independentemente de estarem instalados;
