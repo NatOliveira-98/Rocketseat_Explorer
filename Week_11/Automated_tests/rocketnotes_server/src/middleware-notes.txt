@@ -1,0 +1,15 @@
+é uma função que tem acesso a requisição, antes que ela chege ao seu destino;
+
+  Middleware são funções que tem acesso ao objeto de solicitação (request),
+o objeto de resposta (response), e a próxima função de middleware no ciclo
+resquest-response do aplicativo;
+
+  A próxima função middleware é comumente denotada por uma variável chamada
+next;
+
+  - eles podem: 
+
+    - executar qualquer código;
+    - fazer mudanças nos objetos de request e response;
+    - encerrar o ciclo de request-response;
+    - chamar o próximo middleware na pilha;
